@@ -1,0 +1,58 @@
+£¾
+jetski:
+JSK_LogoMenu->JSK_MainMenu->JSK_CharacterMenu->JSK_MotoMenu->JSK_StageMenu->JSK_MatchMenu
+JSK_MotoUpgrademenu
+JSK_ThunderRankMenu
+
+JSK_MarketMenu
+JSK_MotoTalentMenu
+
+£¾
+playmake:
+JSK_LogoMenu->UI_chara->UI_Daily->UI_MainMenu->UI_Motion->JSK_MatchMenu
+JSK_MarketMenu
+JSK_ThunderRankMenu
+
+JSK_MotoTalentMenu
+JSK_MotoUpgrademenu
+
+£¾
+3Th:
+JSK_LogoMenu->UI_chara->UI_DailyBonus->UI_NGUI_Main->UI_Motion->JSK_MatchMenu
+JSK_MarketMenu
+JSK_ThunderRankMenu
+
+JSK_MotoTalentMenu
+JSK_MotoUpgrademenu
+
+£¾
+ngui:
+JSK_LogoMenu->UI_chara->UI_NGUI_Daily->UI_NGUI_Main->UI_Motion->JSK_MatchMenu
+JSK_MarketMenu
+JSK_ThunderRankMenu
+
+JSK_MotoTalentMenu
+JSK_MotoUpgrademenu
+
+========
+JSK_MainMenu->scene_new_use => 003GamePlaytScenmes\Stage01\
+JSK_CharacterMenu->background => old\UI\tr_fbx\
+		->004GamePlay_Cgaracter\02Female\tr_old_female\multi_female\
+		->004GamePlay_Cgaracter\01male\tr_old_male\multi_fbx\
+JSK_MotoMenu->MotoMenuMotoList => 005GamePlay_moto\moto
+JSK_StageMenu => old\UI\tr_fbx\
+JSK_MatchMenu => old\UI\tr_fbx\
+JSK_MotoUpgrademenu => old\UI\tr_fbx\
+JSK_ThunderRankMenu => old\UI\tr_fbx\
+JSK_MarketMenu  => 002UI_menus\tr_old_ui\
+JSK_MotoTalentMenu => 002UI_menus\tr_old_ui\
+UI_chara-> => old\UI\tr_fbx\ ; 002UI_menus\tr_old_ui\
+UI_Daily-> => 002UI_menus\tr_old_ui\
+UI_MainMenu-> => old\UI\tr_fbx\ ; 
+		old\source\am_stage_01\
+UI_Motion => old\UI\tr_fbx\ ; 002UI_menus\tr_old_ui\ ; ->004GamePlay_Cgaracter\02Female\tr_old_female\multi_female\
+UI_DailyBonus-> 002UI_menus\new_ui\
+UI_NGUI_Main => 002UI_menus\source\newCharacter\02Female\ ; ->004GamePlay_Cgaracter\01male\new_male\
+		resource\ui\ui_MainAtlas
+UI_NGUI_Daily => resource\ui\ui_DailyAtlas
+

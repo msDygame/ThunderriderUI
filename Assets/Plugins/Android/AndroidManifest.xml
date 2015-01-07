@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Others -->
+<manifest android:versionCode="1" android:versionName="1.0" android:installLocation="auto" package="com.dygame.jarfifo"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- -->
+ <!-- Lenovo
+ <manifest android:versionCode="1" android:versionName="1.0" android:installLocation="internalOnly" package="com.dygame.badminton"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+-->
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" />
+    <application android:label="@string/app_name" android:icon="@drawable/app_icon" android:debuggable="false">
+        <!-- copy to use android key detect start-->
+        <activity android:label="@string/app_name" android:name="com.dygame.jarfifo.MainActivity" android:screenOrientation="landscape" android:configChanges="navigation|keyboardHidden|keyboard">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <!--- mark to hide app icon -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+			android:name="com.dygame.jardyfifo.DyOverlay"
+			android:theme="@style/Transparent" >
+		</activity>
+        <!-- copy to use android key detect end-->
+        <activity android:label="@string/app_name" android:name="com.unity3d.player.VideoPlayer" android:screenOrientation="landscape" android:configChanges="navigation|keyboardHidden|keyboard" />
+    </application>
+    <uses-feature android:glEsVersion="65537" />
+    <supports-gl-texture android:name="GL_EXT_texture_compression_dxt1" />
+    <supports-gl-texture android:name="GL_EXT_texture_compression_dxt5" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.GET_TASKS" /> 
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true" />
+    <uses-sdk android:minSdkVersion="6" android:targetSdkVersion="12" />
+</manifest>
